@@ -1,10 +1,10 @@
 body {
     background-image: url(../img/page-bg.png);
     background-repeat: no-repeat;
-    font-family: Verdana,Arial,sans-serif;
+
 }
 
-.wrapper {
+.wrraper {
     width: 480px;
     margin: 0 auto;
     background-color: white;
@@ -24,6 +24,7 @@ p {
 .second {
     padding-top: 50px;
     padding-bottom: 40px;
+
 }
 
 .second ol {
@@ -32,6 +33,7 @@ p {
 
 .second li {
     list-style-type: none;
+
 }
 
 .third {
