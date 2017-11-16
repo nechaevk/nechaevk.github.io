@@ -1,11 +1,12 @@
 body {
     background-image: url(../img/page-bg.png);
     background-repeat: no-repeat;
-    font-size: Verdana,Arial, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
 }
 
 .wrapper {
-    width: 480px;
+    width: 1024px;
     margin: 0 auto;
     background-color: white;
     padding-left: 36px;
@@ -13,29 +14,108 @@ body {
     padding-right: 37px;
 }
 
-img {
-    width: 100%;
+h2 {
+    padding-bottom: 45px;
 }
 
-p {
-    font-size: 12px;
+.first {
+    width: 650px;
+    display: inline-block;
+
+}
+
+
+.first img {
+    float: left;
+    width: 400px;
+    height: 340px;
+    padding-right: 20px;
+
 }
 
 .second {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
 }
 
 .second ol {
-    margin-left: -40px;
+    list-style: none;
+    top: -40px;
+    position: relative;
 }
 
 .second li {
-    list-style-type: none;
+    margin-bottom: -20px;
+}
+
+.second li:nth-child(1):before {
+    position: relative;
+    left: -35px;
+    top: 40px;
+    content: "1";
+    border: 10px solid blue;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+}
+
+.second li:nth-child(2):before {
+    position: relative;
+    left: -35px;
+    top: 40px;
+    content: "2";
+    border: 10px solid blue;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+}
+
+
+.second li:nth-child(3):before {
+    position: relative;
+    left: -35px;
+    top: 40px;
+    content: "3";
+    border: 10px solid blue;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+}
+
+.divider {
+    border-bottom: 3px solid gray;
+    padding-bottom: 20px;
 }
 
 .third {
-    padding-top: 60px;
+    width: 650px;
+    display: inline-block;
+}
+
+.fourth {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+.tt {
+    background-image: url(../img/5.png);
+    background-repeat: no-repeat;
+    width: 211px;
+    height: 219px;
+}
+
+.tt p {
+    width: 150px;
+    padding: 30px;
+}
+
+.fifth li {
+    list-style-image: url(../img/2.png);
+    padding-bottom: 10px;
 }
 
 .first-table {
@@ -45,10 +125,19 @@ p {
 .second-table {
     display: inline-block;
     vertical-align: top;
+    padding-left: 40px;
 }
 
-.fourth li {
-    list-style-type: none;
-    line-height: 35px;
-    font-weight: bold;
+.fifth {
+    width: 650px;
+    display: inline-block;
+}
+
+.six {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    font-size: 12px;
+    text-align: center;
 }
