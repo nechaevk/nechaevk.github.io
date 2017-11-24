@@ -1,0 +1,264 @@
+body {
+    background-image: url(../img/page-bg.png);
+    background-repeat: no-repeat;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 28px;
+}
+
+header {
+    padding-top: 20px;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.menu li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.submenu {
+    position: absolute;
+    top: 140px;
+    left: 350px;
+    padding-left: 0px;
+    display: none;
+    flex-direction: column;
+    font-size: 10px;
+    text-align: center;
+    border: 4px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+.submenu a{
+    text-decoration: none;
+    color: dimgray;
+    font-size: 14px;
+}
+
+.submenu li {
+    display: block;
+    color: black;
+}
+
+.submenu:hover {
+    display: block;
+}
+
+
+.openlist:hover:before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    left: 385px;
+    bottom: 55px;
+}
+
+.openlist:hover .submenu {
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 100px;
+}
+
+span {
+    font-family: 'Dorsa', sans-serif;
+    font-size: 58px;
+    color: black;
+}
+
+.wrapper {
+    background-color: white;
+    width: 900px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.first {
+    position: relative;
+    font-family: 'Dorsa', sans-serif;
+}
+
+.blockone {
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 240px;
+    font-size: 42px;
+    padding: 5px;
+    padding-left: 70px;
+    letter-spacing: 2px;
+
+}
+
+.blocktwo {
+    width: 250px;
+    height: 50px;
+    background-color: #0099ff;
+    position: absolute;
+    top: 290px;
+    font-size: 42px;
+    padding-top: 5px;
+    padding-left: 70px;
+    color: white;
+    letter-spacing: 2px;
+
+}
+
+.left,
+.right {
+    width: 50px;
+    height: 100px;
+    border: 2px solid #0099ff;
+    background-color: #0099ff;
+}
+
+.left {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    position: absolute;
+    top: 450px;
+    left: 94px;
+}
+
+.right {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    position: absolute;
+    top: 450px;
+    left: 40px;
+}
+
+.left:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-out;
+}
+
+.left::before {
+    content: "→";
+    position: absolute;
+    top: 35px;
+    left: 2px;
+}
+
+
+.right:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-out;
+}
+
+.right::before {
+    content: "←";
+    position: absolute;
+    top: 35px;
+    left: 20px;
+}
+
+.to-top {
+    content: "^";
+    color: white;
+    border: 5px solid #0099ff;
+    border-radius: 50%;
+    font-size: 11px;
+    background-color: #0099ff;
+    padding-top: 5px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    right: 180px;
+    bottom: 50px;
+    text-decoration: none;
+}
+
+.venice {
+    background-image: url('../img/Layer%2015.png');
+}
+
+.ny {
+    background-image: url('../img/Layer%2016.png');
+}
+
+.paris {
+    background-image: url('../img/Layer%2017.png');
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    font-size: 13px;
+}
+
+.country-block {
+    width: 290px;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.inside {
+    width: 160px;
+    height: 230px;
+    background-color: #0d2337;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.inside button {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.country-block:hover .inside {
+    display: block;
+}
+
+.inside h6 {
+    font-size: 14px;
+    margin: 0;
+    color: wheat;
+    font-family: 'Dorsa', sans-serif;
+    font-size: 36px;
+}
+
+.info {
+    margin: 0;
+    color: wheat;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    padding-left: 8px;
+    text-align: left;
+}
