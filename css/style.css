@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Pathway Gothic One;
+    src: url(../fonts/PathwayGothicOne-Regular.ttf);
+    
+}
+
+
 body {
     background-image: url(../img/page-bg.png);
     background-repeat: no-repeat;
@@ -12,7 +19,6 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    position: relative;
 
 }
 
@@ -22,6 +28,7 @@ header {
     list-style-type: none;
     text-align: center;
     padding: 10px;
+    
     color: white;
 
 }
@@ -31,10 +38,31 @@ header {
     color: white;
 }
 
+.openlist{
+    position: relative;
+}
+.openlist:hover:before {
+    content: "";
+    border: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    left: 27px;
+    bottom: 3px;
+}
+
+.openlist:hover .submenu {
+    display: block;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
 .submenu {
     position: absolute;
-    top: 140px;
-    left: 350px;
+    top: 50px;
+    left: 5px;
     padding-left: 0px;
     display: none;
     flex-direction: column;
@@ -59,36 +87,17 @@ header {
     display: block;
 }
 
-
-.openlist:hover:before {
-    content: "";
-    border: 10px solid transparent;
-    border-bottom: 10px solid white;
-    position: absolute;
-    left: 385px;
-    bottom: 55px;
-}
-
-.openlist:hover .submenu {
-    display: block;
-    text-align: center;
-}
-
-a:hover {
-    color: black;
-}
-
 .circle {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: white;
     border-radius: 50%;
-    line-height: 100px;
+    line-height: 120px;
 }
 
 span {
-    font-family: 'Dorsa', sans-serif;
-    font-size: 58px;
+    font-family: Dorsa, sans-serif;
+    font-size: 26px;
     color: black;
 }
 
@@ -102,33 +111,25 @@ span {
 
 .first {
     position: relative;
-    font-family: 'Dorsa', sans-serif;
+    font-family: Dorsa, sans-serif;
 }
 
 .blockone {
-    width: 180px;
-    height: 50px;
     background-color: white;
     position: absolute;
     top: 240px;
-    font-size: 42px;
-    padding: 5px;
-    padding-left: 70px;
-    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 5px 10px;
 
 }
 
-.blocktwo {
-    width: 250px;
-    height: 50px;
+.blocktwo { 
     background-color: #0099ff;
     position: absolute;
     top: 290px;
-    font-size: 42px;
-    padding-top: 5px;
-    padding-left: 70px;
+    font-size: 18px;
+ padding: 5px 10px;
     color: white;
-    letter-spacing: 2px;
 
 }
 
@@ -246,18 +247,15 @@ span {
 }
 
 .inside h6 {
-    font-size: 14px;
-    margin: 0;
+    font-size: 16px;
+    margin: 10px;
     color: wheat;
     font-family: 'Dorsa', sans-serif;
-    font-size: 36px;
 }
 
 .info {
-    margin: 0;
     color: wheat;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 12px;
+    font-size: 14x;
     line-height: 17px;
     padding-left: 8px;
     text-align: left;
