@@ -96,7 +96,6 @@ a:hover {
 }
 
 span {
-    font-family: Dorsa, sans-serif;
     font-size: 26px;
     color: black;
 }
@@ -111,7 +110,6 @@ span {
 
 .first {
     position: relative;
-    font-family: Dorsa, sans-serif;
 }
 
 .blockone {
@@ -250,7 +248,6 @@ span {
     font-size: 16px;
     margin: 10px;
     color: wheat;
-    font-family: 'Dorsa', sans-serif;
 }
 
 .info {
