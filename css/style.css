@@ -1,14 +1,14 @@
 @font-face {
-    font-family: Pathway Gothic One;
+    font-family: 'Pathway Gothic One';
     src: url(../fonts/PathwayGothicOne-Regular.ttf);
 
 }
 
-
 body {
-    background-image: url(../img/page-bg.png);
+    background-image: url(../img/page-bg.jpg);
     background-repeat: no-repeat;
     font-size: 28px;
+    font-family: 'Pathway Gothic One', arial, sans-serif;
 }
 
 header {
@@ -21,20 +21,18 @@ header {
 
 }
 
-
 .menu li {
     display: inline-block;
     list-style-type: none;
     text-align: center;
     padding: 10px;
-
-    color: white;
+    color: #fff;
 
 }
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 .openlist {
@@ -44,7 +42,7 @@ header {
 .openlist:hover:before {
     content: "";
     border: 10px solid transparent;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid #fff;
     position: absolute;
     left: 47px;
     bottom: 2px;
@@ -56,7 +54,7 @@ header {
 }
 
 header a:hover {
-    color: black;
+    color: #000;
 }
 
 .submenu {
@@ -68,20 +66,20 @@ header a:hover {
     flex-direction: column;
     font-size: 10px;
     text-align: center;
-    border: 4px solid white;
-    background-color: white;
+    border: 4px solid #fff;
+    background-color: #fff;
     border-radius: 5px;
 }
 
 .submenu a {
     text-decoration: none;
-    color: dimgray;
+    color: #696969;
     font-size: 14px;
 }
 
 .submenu li {
     display: block;
-    color: black;
+    color: #000;
 }
 
 .submenu:hover {
@@ -91,14 +89,14 @@ header a:hover {
 .circle {
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 50%;
     line-height: 120px;
 }
 
 span {
     font-size: 26px;
-    color: black;
+    color: #000;
 }
 
 .wrapper {
@@ -106,7 +104,7 @@ span {
     max-width: 900px;
     margin: 0 auto;
     margin-top: 100px;
-    background-color: white;
+    background-color: #fff;
     padding-left: 36px;
     padding-top: 59px;
     padding-right: 37px;
@@ -121,7 +119,6 @@ h2 {
 .first {
     width: 550px;
     display: inline-block;
-
 }
 
 
@@ -130,7 +127,6 @@ h2 {
     width: 320px;
     height: 290px;
     padding-right: 5px;
-
 }
 
 .second {
@@ -146,49 +142,53 @@ h2 {
     position: relative;
 }
 
-.second li {
-    margin-bottom: -20px;
-}
-
 .second li:nth-child(1):before {
-    position: relative;
-    left: -35px;
-    top: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
     content: "1";
-    border: 10px solid blue;
+    text-align: center;
+    line-height: 30px;
     border-radius: 50%;
-    background-color: blue;
-    color: white;
+    background-color: #0000ff;
+    color: #fff;
 }
 
 .second li:nth-child(2):before {
-    position: relative;
-    left: -35px;
-    top: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 100px;
     content: "2";
-    border: 10px solid blue;
+    text-align: center;
+    line-height: 30px;
     border-radius: 50%;
-    background-color: blue;
-    color: white;
+    background-color: #0000ff;
+    color: #fff;
 }
 
-
 .second li:nth-child(3):before {
-    position: relative;
-    left: -35px;
-    top: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 210px;
     content: "3";
-    border: 10px solid blue;
+    text-align: center;
+    line-height: 30px;
     border-radius: 50%;
-    background-color: blue;
-    color: white;
+    background-color: #0000ff;
+    color: #fff;
 }
 
 .divider {
     margin: 10px;
     width: 100%;
-    max-width:900px;
-    border-bottom: 3px solid gray;
+    max-width: 900px;
+    border-bottom: 3px solid #808080;
     padding-bottom: 20px;
 }
 
@@ -212,8 +212,8 @@ h2 {
 }
 
 .tt h4 {
-    margin-top: 90px;
-    margin-left: 70px;
+    margin-top: 110px;
+    margin-left: 80px;
     margin-bottom: -30px;
 }
 
@@ -224,11 +224,14 @@ h2 {
 
 .mark p {
     width: 200px;
+    padding-left: 45px
 }
-.fifth{
+
+.fifth {
     margin-top: 80px;
 }
-.fifth li { 
+
+.fifth li {
     list-style-image: url(../img/2.png);
     padding-bottom: 10px;
 }
@@ -269,12 +272,11 @@ h2 {
     width: 150px;
     padding-left: 50px;
     margin: 5px;
-
 }
 
 .info a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 footer ul {
@@ -282,7 +284,6 @@ footer ul {
     list-style-type: none;
     justify-content: center;
     align-items: center;
-
 }
 
 footer li > a {
@@ -326,15 +327,14 @@ footer li > a {
 
 .sub a,
 .sub p {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 10px;
 }
 
-
 .to-top {
     content: "^";
-    color: white;
+    color: #fff;
     border: 5px solid #0099ff;
     border-radius: 50%;
     font-size: 11px;
@@ -344,7 +344,7 @@ footer li > a {
     width: 20px;
     height: 20px;
     position: fixed;
-    right: 200px;
-    bottom: 400px;
+    right: 50px;
+    bottom: 100px;
     text-decoration: none;
 }
