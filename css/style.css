@@ -44,7 +44,7 @@ header {
     border: 10px solid transparent;
     border-bottom: 10px solid #fff;
     position: absolute;
-    left: 47px;
+    left: 28px;
     bottom: 2px;
 }
 
@@ -60,7 +60,7 @@ header a:hover {
 .submenu {
     position: absolute;
     top: 50px;
-    left: 13px;
+    left: 8px;
     padding-left: 0px;
     display: none;
     flex-direction: column;
