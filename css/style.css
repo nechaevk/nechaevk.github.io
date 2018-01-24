@@ -10,9 +10,6 @@ body {
     background-size: cover;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 28px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 header {
@@ -113,7 +110,8 @@ span {
     max-width: 900px;
     width: 95%;
     height: auto;
-    padding: 50px;
+    padding: 47px;
+    margin: auto;
     margin-top: 50px;
     min-width: 400px;
 }
@@ -195,21 +193,19 @@ span {
 }
 
 .block {
-    max-width: 1000px;
+    max-width: 994px;
     min-width: 400px;
     background-color: #30454b;
     font-size: 16px;
+    margin: auto;
 }
 
-.block ul {
+.info {
     flex-wrap: wrap;
     list-style-type: none;
     margin: auto;
     box-sizing: border-box;
-    padding: 50px 30px;
-}
-
-.info {
+    padding: 50px 30;
     display: flex;
 }
 
@@ -231,6 +227,7 @@ footer {
     min-width: 400px;
     max-width: 1000px;
     width: 95%;
+    margin: auto;
 }
 
 footer ul {
@@ -334,7 +331,13 @@ p {
     .gallery div {
         width: 40%;
     }
-
+    
+    .block { 
+        width: 100%;
+        min-width: 700px;
+        padding: 28px;
+    }
+    
     .block ul {
         padding: 5%;
         margin: 0;
@@ -388,13 +391,13 @@ p {
 
     .menu {
         width: 95%;
-        max-width: 410px;
-        margin: 5% 18%;
+        max-width: 250px;
+        margin: 5%;
     }
 
      .menu .circle {
         order: 1;
-        margin: 3% 25%;
+        margin: 3% 26%;
     }
 
     .menu .home {
@@ -437,8 +440,9 @@ p {
     .block {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        padding: 1% 10%;
+        width: 95%;
+        min-width: 400px;    
+        padding: 0 10%;
     }
 
     .info li {
@@ -503,7 +507,7 @@ p {
 
     .menu .circle {
         order: 1;
-        margin: 3% 20%;
+        margin: 3% 26%;
     }
 
     .menu .home {
