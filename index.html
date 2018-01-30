@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>homewok9</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>homewok10</title>
     <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?
     family=Pathway+Gothic+One" rel="stylesheet">
@@ -12,119 +12,177 @@
 </head>
 
 <body>
-    <header>
-        <ul class="menu">
-            <li class="home"><a href="">HOME</a></li>
-            <li class="openlist">
-                <a href="index.html">ABOUT</a>
-                <ul class="submenu">
-                    <li><a href="#">AGENCY</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">TEAM</a></li>
+    <header class="header">
+        <ul class="header__nav-menu menu">
+            <li class="header__nav-menu-item home">
+                <a class="header__nav-menu-link" href="">HOME</a>
+            </li>
+            <li class="header__nav-menu-item openlist">
+                <a class="header__nav-menu-link" href="#">ABOUT</a>
+                <ul class="header__nav-menu-submenu submenu">
+                    <li class="header__nav-menu-submenu-item">
+                        <a class="header__nav-menu-submenu-link" href="#">AGENCY</a>
+                    </li>
+                    <li class="header__nav-menu-submenu-item">
+                        <a class="header__nav-menu-submenu-link" href="#">NEWS</a>
+                    </li>
+                    <li class="header__nav-menu-submenu-item">
+                        <a class="header__nav-menu-submenu-link" href="#">TEAM</a>
+                    </li>
                 </ul>
             </li>
-            <li class="gall"><a href="gallery.html">GALLERY</a></li>
-            <li class="circle"><span>JOURNEY</span></li>
-            <li class="tyr"><a href="">TOURS</a></li>
-            <li class="blogg"><a href="">BLOG</a></li>
-            <li class="conta"><a href="">CONTACTS</a></li>
+            <li class="header__nav-menu-item gall">
+                <a class="header__nav-menu-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="header__nav-menu-item circle">
+                <span class="header__nav-page-heading">JOURNEY</span>
+            </li>
+            <li class="header__nav-menu-item tyr">
+                <a class="header__nav-menu-link" href="">TOURS</a>
+            </li>
+            <li class="header__nav-menu-item blogg">
+                <a class="header__nav-menu-link" href="">BLOG</a>
+            </li>
+            <li class="header__nav-menu-item conta">
+                <a class="header__nav-menu-link" href="">CONTACTS</a>
+            </li>
         </ul>
     </header>
-    <div class="wrapper container">
-        <div class="col-sm-12">
+    <div class="wrapper">
+        <div class="heading-two">
             <h2>OUR GALLERY</h2>
         </div>
-        <div class="gallery row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2087.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+        <div class="gallery">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer87.png, img/layer87@2x.png">
+                    <img srcset="img/layer87.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2088.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer88.png, img/layer88@2x.png">
+                    <img srcset="img/layer88.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2089.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer89.png, img/layer89@2x.png">
+                    <img srcset="img/layer89.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2090.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer90.png, img/layer90@2x.png">
+                    <img srcset="img/layer90.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2091.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer91.png, img/layer91@2x.png">
+                    <img srcset="img/layer91.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2092.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer92.png, img/layer92@2x.png">
+                    <img srcset="img/layer92.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2093.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer93.png, img/layer93@2x.png">
+                    <img srcset="img/layer93.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2094.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer94.png, img/layer94@2x.png">
+                    <img srcset="img/layer94.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <img class="picture" src="img/Layer%2095.png" alt="photo">
-                <img class="zoom" src="img/icon.png" alt="zoom">
+            <div class="gallery__img-wrapper">
+                <picture class="gallery__img picture">
+                    <source srcset="img/layer95.png, img/layer95@2x.png">
+                    <img srcset="img/layer95.png" alt="default image">
+                </picture>
+                <img class="zoom" src="img/icon.svg" alt="zoom">
             </div>
         </div>
         <a href="#" class="to-top" title="Вверх">
             &and;
         </a>
     </div>
-    <div class="block">
-        <ul class="info">
-            <li class="faqs"><a href="#">FAQS PAGE</a></li>
-            <li class="useful"><a href="#">USEFUL LINKS</a></li>
-            <li class="isurance"><a href="#">INSURANCE</a></li>
-            <li class="contactus"><a href="#">CONTACT US:</a></li>
-            <li class="people"><a href="#">PEOPLE SAY</a></li>
-            <li class="partners"><a href="#">PARTNERS</a></li>
-            <li class="family"><a href="#">FAMILY TRAVEL</a></li>
-            <li class="tel"><a href="#">TEL: 1-800-234-5678</a>
-                <a href="">info@demolink.org</a>
+    <div class="bottom-block block">
+        <ul class="bottom-block__menu info">
+            <li class="bottom-block__menu-item faqs">
+                <a class="bottom-block__menu-link" href="#">FAQS PAGE</a>
+            </li>
+            <li class="bottom-block__menu-item useful">
+                <a class="bottom-block__menu-link" href="#">USEFUL LINKS</a>
+            </li>
+            <li class="bottom-block__menu-item isurance">
+                <a class="bottom-block__menu-link" href="#">INSURANCE</a>
+            </li>
+            <li class="bottom-block__menu-item contactus">
+                <a class="bottom-block__menu-link" href="#">CONTACT US:</a></li>
+            <li class="bottom-block__menu-item people">
+                <a class="bottom-block__menu-link" href="#">PEOPLE SAY</a>
+            </li>
+            <li class="bottom-block__menu-item partners">
+                <a class="bottom-block__menu-link" href="#">PARTNERS</a>
+            </li>
+            <li class="bottom-block__menu-item family">
+                <a class="bottom-block__menu-link" href="#">FAMILY TRAVEL</a></li>
+            <li class="bottom-block__menu-item tel">
+                <a class="bottom-block__menu-link" href="#">TEL: 1-800-234-5678</a>
+                <a class="bottom-block__menu-link" href="">info@demolink.org</a>
             </li>
         </ul>
     </div>
-    <footer>
-        <div class="footer">
-            <ul class="social">
-                <li>
-                    <a href="#" class="twit"></a>
+    <footer class="footer">
+        <div class="footer__block">
+            <ul class="footer__block-social social">
+                <li class="footer__block-social-item">
+                    <a class="footer__block-social-link twit" href="#"></a>
                 </li>
-                <li>
-                    <a href="#" class="f"></a>
+                <li class="footer__block-social-item">
+                    <a class="footer__block-social-link f" href="#"></a>
                 </li>
-                <li>
-                    <a href="#" class="g"></a>
+                <li class="footer__block-social-item">
+                    <a class="footer__block-social-link g" href="#"></a>
                 </li>
-                <li>
-                    <a href="#" class="inst"></a>
+                <li class="footer__block-social-item">
+                    <a class="footer__block-social-link inst" href="#"></a>
                 </li>
             </ul>
-            <ul class="sub">
-                <li>
+            <ul class="footer__block-sub sub">
+                <li class="footer__block-sub-item">
                     <p>
-                        <a href="#" class="">Journey © 2013</a> |&nbsp;
+                        <a class="footer__block-sub-link" href="#" class="">Journey © 2013</a> |&nbsp;
                     </p>
                 </li>
-                <li>
+                <li class="footer__block-sub-item">
                     <p>
-                        <a href="#" class="">Privacy Policy</a> |&nbsp;
+                        <a class="footer__block-sub-link" href="#" class="">Privacy Policy</a> |&nbsp;
                     </p>
                 </li>
-                <li>
+                <li class="footer__block-sub-item">
                     <p>Website designed by
-                        <a href="#" class="">TemplateMonster.com</a>
+                        <a class="footer__block-sub-link" href="#" class="">TemplateMonster.com</a>
                     </p>
                 </li>
             </ul>
         </div>
     </footer>
 </body>
+
 </html>
