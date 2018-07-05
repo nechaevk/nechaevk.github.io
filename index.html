@@ -1,109 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div id="buttons-container"></div>
-    <audio class="sonidos" src="//goo.gl/T1rxRG" data-note="do"></audio>
-    <audio class="sonidos" src="//goo.gl/KT8FN3" data-note="re"></audio>
-    <audio class="sonidos" src="//goo.gl/1SfsNS" data-note="mi"></audio>
-    <audio class="sonidos" src="//goo.gl/OsOCXe" data-note="fa"></audio>
-    <audio class="sonidos" src="//goo.gl/vukZmv" data-note="sol"></audio>
-    <audio class="sonidos" src="//goo.gl/Bjd9KT" data-note="la"></audio>
-    <audio class="sonidos" src="//goo.gl/MS9HTp" data-note="si"></audio>
-    <script type="text/template" id="buttons">
-        <ul class="menu-list">
-            <% arrayString.forEach(item => { %>
-                <li class="menu-item">
-                    <% item.forEach(index => { %>
-                        <button class="button"><%= index %></button>
-                        <% }) %>
-                </li>
-                <% }); %>
-        </ul>
 
-    </script>
-    <p id="p-container"></p>
+  <div class="container">
+    <div class="row">
+      <form class="col s12 m6" acrion="#">
+        <div class="row">
+          <div class="input-field col s9">
+            <input placeholder="First name" id="first_name" type="text" class="validate">
+            <label for="first_name"></label>
+          </div>
+          <div class="input-field col s9">
+            <input placeholder="Last name" id="last_name" type="text" class="validate">
+            <label for="last_name"></label>
+          </div>
+          <div class="input-field col s9">
+            <input pattern="/^\+[0-9]{12}$/" placeholder="tel +xxx xx xx xx xxx" id="tel" type="text" class="validate">
+            <label for="tel"></label>
+          </div>
+          <div class="col s9">
+            <button class="btn waves-effect waves-light" id="submit-btn" type="submit" name="action">Submit</button>
+          </div>
+        </div>
+      </form>
+      <ul class="results col s12">
+      </ul>
+    </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
-    <script>
-        const keyboardString = "qwertyuiop[]asdfghjkl;'zxcvbnm,./ ";
-        let arraySound = ['do', 're', 'mi', 'fa', 'sol', 'la', 'si', 'do', 're', 'mi', 'fa', 'sol', 'la', 'si', 'do', 're', 'mi', 'fa', 'sol', 'la', 'si', 'do', 're', 'mi', 'fa', 'sol', 'la', 'si']
-        let arrayString = [
-            [],
-            [],
-            [],
-            []
-        ];
-        function pushToArray(index, array, number) {
-            array[index].push(number)
-        }
-        function addKeyboardLayout(alphabet) {
-            const keyboard = alphabet.split("");
-            for (let i = 0; i < keyboard.length; i++) {
-                if (i <= 11) {
-                    pushToArray(0, arrayString, keyboard[i]);
-                } else if (i > 11 && i < 23) {
-                    pushToArray(1, arrayString, keyboard[i]);
-                } else if (i >= 23 && i < 33) {
-                    pushToArray(2, arrayString, keyboard[i]);
-                } else {
-                    pushToArray(3, arrayString, keyboard[i]);
-                }
-            }
-        }
-        addKeyboardLayout(keyboardString)
-        const html = document.querySelector('#buttons').textContent.trim();
-        const compiled = _.template(html)(arrayString);
-        const container = document.querySelector('#buttons-container');
-        container.innerHTML = compiled;
-        function setAttribute() {
-            let tt = document.querySelectorAll(".button");
-            for (let i = 0; i < 34; i++) {
-                if (i < 12) {
-                    tt[i].setAttribute('data-note', arraySound[i]);
-                } else if (i >= 12 && i < 23) {
-                    tt[i].setAttribute('data-note', arraySound[i - 5]);
-                } else if (i >= 23 && i < 33) {
-                    tt[i].setAttribute('data-note', arraySound[i - 23]);
-                } else if (i == 33) {
-                    tt[i].setAttribute('data-note', arraySound[i - 33]);
-                }
-            }
-        }
-        function callback() {
-            let letter = event.key;
-            let tempOut = document.querySelector("#p-container")
-            for (let i = 0; i < keyboardString.length; i++) {
-                if (letter == keyboardString[i]) {
-                    tempOut.innerHTML += letter;
-                    let temp = document.querySelectorAll('.button');
-                    console.log(temp)
-                    temp[i].className = "button keyboard__btn--active"
-                    const findAllClass = document.querySelectorAll(".button");
-                    let note = findAllClass[i].getAttribute('data-note');
-                    playSound(note);
-                }
-            }
-            window.addEventListener("keyup", callOut);
-        }
-        function callOut() {
-            let findClassToRemove = document.querySelector(".keyboard__btn--active");
-            findClassToRemove.classList.remove("keyboard__btn--active");
-        }
-        const playSound = note => {
-            const audio = document.querySelector(`audio[data-note=${note}]`);
-            audio.currentTime = 0;
-            audio.play();
-        };
-        setAttribute();
-        window.addEventListener("keydown", callback);
-    </script>
+  <script src="js/script.js"></script>
+
 </body>
-
 </html>
